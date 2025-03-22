@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Buddy - Mental Health Support</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <a href="#" class="logo">Mind Buddy</a>
+        <div class="header-links">
+            <a href="#" class="header-link">AI-powered</a>
+            <a href="#" class="header-link">Sign up for free</a>
+            <a href="#" class="header-link">Real-time</a>
+            <button class="btn btn-primary">Join now</button>
+        </div>
+    </header>
+
+    <section class="hero">
+        <h1>Find a therapist and schedule a session</h1>
+        <p>Choose your therapist and preferred session time</p>
+        
+        <div class="search-card">
+            <h2>Schedule your therapy session</h2>
+            <form class="search-form">
+                <select id="session-type">
+                    <option>Therapist / Session Type / Topic</option>
+                    <option>Individual Therapy</option>
+                    <option>Couples Therapy</option>
+                    <option>Family Therapy</option>
+                    <option>Group Therapy</option>
+                </select>
+                
+                <input type="text" id="location" placeholder="Location">
+                <input type="date" id="date">
+                <button type="submit" class="btn btn-primary">Find</button>
+            </form>
+        </div>
+    </section>
+
+    <main class="main-content">
+        <aside class="sidebar">
+            <h3>Search Therapists</h3>
+            <input type="text" id="searchBar" placeholder="Search by name or specialty">
+            <button id="toggleDarkMode" class="btn btn-secondary">Toggle Dark Mode</button>
+        </aside>
+
+        <div class="results">
+            <div class="therapists-grid" id="therapist-list">
+                <!-- Therapists will be loaded dynamically here -->
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>Mind Buddy &copy; 2025 | Your AI-Powered Mental Wellness Companion</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
